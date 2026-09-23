@@ -1,99 +1,67 @@
-# 👋 Hi, I'm Abdellatif Salah Eldin  
+🎓 **Prospective thesis-based MSc in Computer Science applicant** — B.Sc. Computer Science (AI Track), AASTMT, 2022–2026, GPA 3.56/4.0 (Excellent with Honors)
 
-🎓 **B.Sc. Computer Science (AI Track)** — Arab Academy for Science, Technology and Maritime Transport (AASTMT), 2022–2026, GPA 3.56/4.0 (Excellent with Honors)  
-🧠 Research-focused graduate interested in **Biomedical NLP, Retrieval-Augmented Generation (RAG), Medical Computer Vision, and Trustworthy AI Systems**  
-🏥 Built **MediLink**, a full-stack medical AI application powered by HTAN (my medical image segmentation model) and my own biomedical RAG system, connected through multiple LLM components 
-🩻 Co-developed **HTAN**, a medical image segmentation architecture, with a paper in preparation for submission  
+🧠 Working across machine learning, deep learning, LLMs, computer vision, and AI systems
+
+🏥 Built **MediLink**, a full-stack medical AI application connecting my biomedical RAG system, my HTAN segmentation model, and multiple LLM components
+
+🩻 Co-developed **HTAN**, a medical image segmentation architecture, with a paper in preparation for submission
+
 📌 Goal: Research-based Master's (MSc) in Computer Science, with a direction in AI, Computer Vision, NLP, and Explainable AI (XAI)
-📄 [Download my CV](#) <!-- replace with your GitHub CV link -->
 
 ---
 
-## 🌐 Socials:
+I learn primarily by building. I regularly teach myself new technologies and areas beyond my formal coursework, turning what I learn into research, experiments, and working systems.
+
+---
+
+## 🌐 Socials
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abdellatif-salama-40a77921a)
 [![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:abdosalamaman@gmail.com)
 
 ---
 
-# 🔬 Research Interests
+## 🔬 Areas I'm Interested In
 
-- Computer Vision and Medical Image Segmentation for Healthcare  
-- Biomedical NLP, Large Language Models (LLMs), and Retrieval-Augmented Generation (RAG)  
-- Medical Information Retrieval and Clinical Question Answering  
-- Multimodal Medical AI Combining Imaging and Clinical Text  
-- Explainable AI (XAI) for Trustworthy, Citation-Grounded Medical Systems
----
-
-# 🧪 Research
-
-## 🩻 HTAN: Hyper TransAttUNet for Medical Image Segmentation
-
-Co-developed **HTAN**, a segmentation architecture that adds manifold-constrained hyper-connections to the TransAttUNet bottleneck.
-
-- Improved Dice by **1.05, 3.57, and 1.07 points** over the reproduced baseline on ISIC-2018 (skin lesions), GlaS (glands), and Data Science Bowl 2018 (nuclei)
-- Responsible for data preprocessing, model architecture design, training optimization, and evaluation, including ablations on residual stream count and mHC block depth
-- Fixed NaN training failures from fp16 overflow in the Sinkhorn-Knopp projection by moving it to FP32, with gradient clipping for stability
-- Manuscript in preparation for submission to a peer-reviewed AI or medical imaging venue
-
-## 🏥 MediLink: Biomedical Retrieval-Augmented Generation System
-
-A biomedical RAG assistant for melanoma, skin cancer, and multiple myeloma.
-
-### Key Components
-
-- Biomedical ingestion pipelines over **PubMed, PMC, Cancer.gov, NHS, MedlinePlus, and clinical guideline PDFs**
-- Biomedical embeddings using `pritamdeka/S-PubMedBert-MS-MARCO`
-- **Weaviate hybrid retrieval** using dense search + BM25
-- Biomedical reranking using `ncbi/MedCPT-Cross-Encoder`
-- Query rewriting, HyDE expansion, multi-query retrieval, and MMR diversification
-- Intent classification, out-of-scope detection, triage routing, and citation-grounded answer generation
-- Local evaluation for retrieval relevance, coverage, faithfulness, grounding quality, and chunk diversity
-
-### Benchmark Highlights
-
-*30-question benchmark across melanoma, skin cancer, and multiple myeloma — small sample, indicative only:*
-
-- Approx. **0.91 relevance**
-- Approx. **0.95 coverage**
-- Approx. **0.95 answer faithfulness**
+![ML](https://img.shields.io/badge/Machine%20Learning-blue?style=for-the-badge)
+![DL](https://img.shields.io/badge/Deep%20Learning-blue?style=for-the-badge)
+![CV](https://img.shields.io/badge/Computer%20Vision-purple?style=for-the-badge)
+![NLP](https://img.shields.io/badge/NLP%20%26%20LLMs-purple?style=for-the-badge)
+![RAG](https://img.shields.io/badge/Retrieval--Augmented%20Generation-orange?style=for-the-badge)
+![XAI](https://img.shields.io/badge/Explainable%20AI-orange?style=for-the-badge)
+![Medical AI](https://img.shields.io/badge/Medical%20AI-red?style=for-the-badge)
+![Segmentation](https://img.shields.io/badge/Medical%20Image%20Segmentation-red?style=for-the-badge)
+![Multimodal](https://img.shields.io/badge/Multimodal%20Healthcare%20AI-green?style=for-the-badge)
 
 ---
 
-# 📂 Featured Projects
+## 🧪 Featured Projects
 
-## 🏥 MediLink: Biomedical RAG and Clinical QA System
+### 🏥 MediLink
 
-A research-oriented biomedical retrieval system for evidence-grounded medical question answering.
+A full-stack medical AI application connecting my biomedical RAG system, my HTAN segmentation model, and multiple LLM components into one platform.
 
-**Main technologies:**  
-`Python` `Weaviate` `PyTorch` `sentence-transformers` `HuggingFace` `MedCPT` `RAG` `LangGraph` `Docker` `AWS`
+MediLink uses LangGraph orchestration to coordinate biomedical RAG, medical image segmentation, and clinical workflow automation. The RAG system runs hybrid retrieval with MedCPT cross-encoder reranking over PubMed, PMC, and clinical guidelines, and scored approximately **0.91 relevance, 0.95 coverage, and 0.95 answer faithfulness** on a 30-question benchmark.
 
-**Key features:**
+The platform was built as separate services connecting the RAG engine, the HTAN vision model, and the orchestration layer, containerized with Docker and deployed on AWS.
 
-- PubMed / PMC / medical guideline ingestion  
-- Biomedical hybrid search with cross-encoder reranking  
-- Query rewriting and retrieval diversification  
-- Citation-grounded medical answer generation  
-- Computer vision module for X-ray and MRI interpretation  
-- Local RAG evaluation pipeline  
-
-## 🩻 HTAN: Hyper TransAttUNet
-
-A medical image segmentation architecture that expands the TransAttUNet bottleneck into multiple manifold-constrained residual streams.
-
-**Main technologies:**  
-`Python` `PyTorch` `Vision Transformers` `CNNs` `Medical Image Segmentation`
-
-**Key features:**
-
-- Manifold-constrained hyper-connections at the Self-Aware Attention bottleneck  
-- Sinkhorn-Knopp doubly stochastic residual mixing  
-- Evaluated on ISIC-2018, GlaS, and Data Science Bowl 2018  
+**Tech:** `Python` `LangGraph` `Weaviate` `PyTorch` `Docker` `AWS`
 
 ---
 
-# 💻 Tech Stack:
+### 🩻 HTAN
+
+Hyper-TransAttUNet with Manifold-Constrained Hyper-Connections, co-developed with my research team for medical image segmentation.
+
+HTAN extends TransAttUNet with hyper-connections constrained to the Birkhoff polytope using Sinkhorn-Knopp normalization. It improved Dice scores over the reproduced baseline by **1.05, 3.57, and 1.07 points** on ISIC-2018, GlaS, and Data Science Bowl 2018, respectively.
+
+My contributions covered data preprocessing, model architecture design, training optimization, and evaluation, including ablations on residual stream count and mHC block depth, and fixing FP16 numerical instability in the Sinkhorn-Knopp projection.
+
+**Tech:** `Python` `PyTorch` `Vision Transformers` `CNNs`
+
+---
+
+## 💻 Tech Stack
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![SQL](https://img.shields.io/badge/SQL-025E8C?style=for-the-badge&logo=sqlite&logoColor=white)
@@ -117,50 +85,25 @@ A medical image segmentation architecture that expands the TransAttUNet bottlene
 
 ---
 
-# 🧰 Technical Skills
+## 🎓 Certifications
 
-## Programming  
-`Python` `SQL` `Java` `C++`
-
-## Machine Learning / Deep Learning  
-`PyTorch` `TensorFlow` `scikit-learn` `HuggingFace Transformers` `sentence-transformers`
-
-## Retrieval / NLP  
-`Retrieval-Augmented Generation` `Biomedical NLP` `Hybrid Search` `Cross-Encoder Reranking` `MMR Retrieval` `Query Rewriting`
-
-## Computer Vision / Healthcare AI  
-`Medical Image Segmentation` `CNNs` `Vision Transformers` `Clinical QA` `Medical Information Retrieval` `Clinical Decision Support`
-
-## Tools  
-`Weaviate` `Docker` `Git` `Linux` `AWS` `CUDA` `Jupyter` `pandas` `NumPy`
+- **Retrieval Augmented Generation (RAG)** — DeepLearning.AI
+- **Natural Language Processing with Attention Models** — DeepLearning.AI
+- **Oracle Cloud Infrastructure 2025 Certified Data Science Professional**
+- **Supervised Machine Learning: Regression and Classification** — Stanford University / Coursera
+- **Advanced Learning Algorithms** — Stanford University / Coursera
 
 ---
 
-# 🎓 Certifications
-
-- **Retrieval Augmented Generation (RAG)** — DeepLearning.AI  
-- **Natural Language Processing with Attention Models** — DeepLearning.AI  
-- **Oracle Cloud Infrastructure 2025 Certified Data Science Professional**  
-- **Supervised Machine Learning: Regression and Classification** — Stanford University / Coursera  
-- **Advanced Learning Algorithms** — Stanford University / Coursera  
-
----
-
-# 📊 GitHub Stats:
+## 📊 GitHub Stats
 
 ![](https://github-readme-stats.vercel.app/api?username=boodie04&theme=dark&hide_border=false&include_all_commits=false&count_private=false)
-
-![](https://nirzak-streak-stats.vercel.app/?user=boodie04&theme=dark&hide_border=false)
 
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=boodie04&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
 ---
 
-[![](https://visitcount.itsvg.in/api?id=boodie04&icon=0&color=0)](https://visitcount.itsvg.in)
-
----
-
-# 🌍 Connect with Me
+## 🌍 Connect with Me
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Abdellatif%20Salama-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/abdellatif-salama-40a77921a)
 [![GitHub](https://img.shields.io/badge/GitHub-boodie04-black?style=for-the-badge&logo=github)](https://github.com/boodie04)
