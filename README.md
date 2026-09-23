@@ -1,38 +1,44 @@
-# 👋 Hi, I’m Abdellatif Salah Eldin  
+# 👋 Hi, I'm Abdellatif Salah Eldin  
 
-🎓 **B.Sc. Computer Science (AI Track)** — Arab Academy for Science, Technology and Maritime Transport (AASTMT), Expected 2026  
-🧠 Research-focused student interested in **Biomedical NLP, Retrieval-Augmented Generation (RAG), Medical AI, Computer Vision, and Trustworthy AI Systems**  
-🏥 Currently building **MediLink**, a biomedical RAG system for clinical question answering and medical information retrieval  
-🔬 Also involved in team research on **medical image segmentation and classification** using deep learning  
-📌 Goal: Research-based Master’s in AI / ML / NLP / Healthcare AI  
+🎓 **B.Sc. Computer Science (AI Track)** — Arab Academy for Science, Technology and Maritime Transport (AASTMT), 2022–2026, GPA 3.56/4.0 (Excellent with Honors)  
+🧠 Research-focused graduate interested in **Biomedical NLP, Retrieval-Augmented Generation (RAG), Medical Computer Vision, and Trustworthy AI Systems**  
+🏥 Built **MediLink**, a full-stack medical AI application powered by HTAN (my medical image segmentation model) and my own biomedical RAG system, connected through multiple LLM components 
+🩻 Co-developed **HTAN**, a medical image segmentation architecture, with a paper in preparation for submission  
+📌 Goal: Research-based Master's (MSc) in Computer Science, with a direction in AI, Computer Vision, NLP, and Explainable AI (XAI)
+📄 [Download my CV](#) <!-- replace with your GitHub CV link -->
 
 ---
 
 ## 🌐 Socials:
 
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/Boodie_4)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abdellatif-salama-40a77921a)
-[![TikTok](https://img.shields.io/badge/TikTok-%23000000.svg?logo=TikTok&logoColor=white)](https://tiktok.com/@Abdellatif.py)
 [![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:abdosalamaman@gmail.com)
 
 ---
 
 # 🔬 Research Interests
 
-- Biomedical NLP and Retrieval-Augmented Generation (RAG)  
-- Medical information retrieval and clinical question answering  
-- Medical image analysis and computer vision for healthcare  
-- Multimodal healthcare AI combining clinical text and medical images  
-- Trustworthy, explainable, and citation-grounded AI systems  
-- LLM evaluation, retrieval quality, and response faithfulness  
-
+- Computer Vision and Medical Image Segmentation for Healthcare  
+- Biomedical NLP, Large Language Models (LLMs), and Retrieval-Augmented Generation (RAG)  
+- Medical Information Retrieval and Clinical Question Answering  
+- Multimodal Medical AI Combining Imaging and Clinical Text  
+- Explainable AI (XAI) for Trustworthy, Citation-Grounded Medical Systems
 ---
 
-# 🧪 Current Research
+# 🧪 Research
+
+## 🩻 HTAN: Hyper TransAttUNet for Medical Image Segmentation
+
+Co-developed **HTAN**, a segmentation architecture that adds manifold-constrained hyper-connections to the TransAttUNet bottleneck.
+
+- Improved Dice by **1.05, 3.57, and 1.07 points** over the reproduced baseline on ISIC-2018 (skin lesions), GlaS (glands), and Data Science Bowl 2018 (nuclei)
+- Responsible for data preprocessing, model architecture design, training optimization, and evaluation, including ablations on residual stream count and mHC block depth
+- Fixed NaN training failures from fp16 overflow in the Sinkhorn-Knopp projection by moving it to FP32, with gradient clipping for stability
+- Manuscript in preparation for submission to a peer-reviewed AI or medical imaging venue
 
 ## 🏥 MediLink: Biomedical Retrieval-Augmented Generation System
 
-I am building **MediLink**, a biomedical RAG assistant for melanoma, skin cancer, and multiple myeloma.
+A biomedical RAG assistant for melanoma, skin cancer, and multiple myeloma.
 
 ### Key Components
 
@@ -41,28 +47,16 @@ I am building **MediLink**, a biomedical RAG assistant for melanoma, skin cancer
 - **Weaviate hybrid retrieval** using dense search + BM25
 - Biomedical reranking using `ncbi/MedCPT-Cross-Encoder`
 - Query rewriting, HyDE expansion, multi-query retrieval, and MMR diversification
-- Claude-based intent classification, out-of-scope detection, triage routing, and citation-grounded answer generation
+- Intent classification, out-of-scope detection, triage routing, and citation-grounded answer generation
 - Local evaluation for retrieval relevance, coverage, faithfulness, grounding quality, and chunk diversity
 
 ### Benchmark Highlights
 
-- 30-question disease benchmark across melanoma, skin cancer, and multiple myeloma
+*30-question benchmark across melanoma, skin cancer, and multiple myeloma — small sample, indicative only:*
+
 - Approx. **0.91 relevance**
 - Approx. **0.95 coverage**
 - Approx. **0.95 answer faithfulness**
-
----
-
-## 🧠 Medical Image Segmentation Research
-
-Team research focused on medical image segmentation and classification using deep learning methods.
-
-### Focus Areas
-
-- CNN and Transformer-based models for X-ray and MRI analysis  
-- Medical image preprocessing and model evaluation  
-- Segmentation and classification workflows  
-- Manuscript preparation for an AI / medical imaging venue  
 
 ---
 
@@ -70,35 +64,32 @@ Team research focused on medical image segmentation and classification using dee
 
 ## 🏥 MediLink: Biomedical RAG and Clinical QA System
 
-A research-oriented biomedical retrieval system designed for evidence-grounded medical question answering.
+A research-oriented biomedical retrieval system for evidence-grounded medical question answering.
 
 **Main technologies:**  
-`Python` `Weaviate` `PyTorch` `sentence-transformers` `HuggingFace` `MedCPT` `Claude API` `Biomedical NLP` `RAG`
+`Python` `Weaviate` `PyTorch` `sentence-transformers` `HuggingFace` `MedCPT` `RAG` `LangGraph` `Docker` `AWS`
 
 **Key features:**
 
 - PubMed / PMC / medical guideline ingestion  
-- Biomedical hybrid search  
-- Cross-encoder reranking  
+- Biomedical hybrid search with cross-encoder reranking  
 - Query rewriting and retrieval diversification  
 - Citation-grounded medical answer generation  
+- Computer vision module for X-ray and MRI interpretation  
 - Local RAG evaluation pipeline  
 
----
+## 🩻 HTAN: Hyper TransAttUNet
 
-## 🚦 Traffic Accident Detection System
-
-A deep learning project for detecting vehicles, pedestrians, and traffic accidents in video sequences.
+A medical image segmentation architecture that expands the TransAttUNet bottleneck into multiple manifold-constrained residual streams.
 
 **Main technologies:**  
-`Python` `PyTorch` `Mask R-CNN` `LSTM` `Computer Vision` `BDD100K` `Nexar-Collision` `CCD`
+`Python` `PyTorch` `Vision Transformers` `CNNs` `Medical Image Segmentation`
 
 **Key features:**
 
-- Fine-tuned Mask R-CNN for object detection  
-- Extracted spatial-temporal features from video frames  
-- Used LSTM-based classification for crash vs. non-crash events  
-- Evaluated on traffic accident datasets with visualization-based analysis  
+- Manifold-constrained hyper-connections at the Self-Aware Attention bottleneck  
+- Sinkhorn-Knopp doubly stochastic residual mixing  
+- Evaluated on ISIC-2018, GlaS, and Data Science Bowl 2018  
 
 ---
 
@@ -108,17 +99,14 @@ A deep learning project for detecting vehicles, pedestrians, and traffic acciden
 ![SQL](https://img.shields.io/badge/SQL-025E8C?style=for-the-badge&logo=sqlite&logoColor=white)
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![R](https://img.shields.io/badge/r-%23276DC3.svg?style=for-the-badge&logo=r&logoColor=white)
 
 ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white)
 
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
@@ -127,16 +115,12 @@ A deep learning project for detecting vehicles, pedestrians, and traffic acciden
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![CUDA](https://img.shields.io/badge/CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white)
 
-![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)
-![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
-![Kaggle](https://img.shields.io/badge/Kaggle-035a7d?style=for-the-badge&logo=kaggle&logoColor=white)
-
 ---
 
 # 🧰 Technical Skills
 
 ## Programming  
-`Python` `SQL` `Java` `C++` `R`
+`Python` `SQL` `Java` `C++`
 
 ## Machine Learning / Deep Learning  
 `PyTorch` `TensorFlow` `scikit-learn` `HuggingFace Transformers` `sentence-transformers`
@@ -144,8 +128,8 @@ A deep learning project for detecting vehicles, pedestrians, and traffic acciden
 ## Retrieval / NLP  
 `Retrieval-Augmented Generation` `Biomedical NLP` `Hybrid Search` `Cross-Encoder Reranking` `MMR Retrieval` `Query Rewriting`
 
-## Healthcare AI  
-`Medical Image Analysis` `Clinical QA` `Medical Information Retrieval` `Medical Image Segmentation` `Clinical Decision Support`
+## Computer Vision / Healthcare AI  
+`Medical Image Segmentation` `CNNs` `Vision Transformers` `Clinical QA` `Medical Information Retrieval` `Clinical Decision Support`
 
 ## Tools  
 `Weaviate` `Docker` `Git` `Linux` `AWS` `CUDA` `Jupyter` `pandas` `NumPy`
@@ -155,10 +139,8 @@ A deep learning project for detecting vehicles, pedestrians, and traffic acciden
 # 🎓 Certifications
 
 - **Retrieval Augmented Generation (RAG)** — DeepLearning.AI  
-- **Preprocessing Unstructured Data for LLM Applications** — DeepLearning.AI  
 - **Natural Language Processing with Attention Models** — DeepLearning.AI  
 - **Oracle Cloud Infrastructure 2025 Certified Data Science Professional**  
-- **Oracle Cloud Infrastructure 2025 Certified Foundations Associate (AI Focus)**  
 - **Supervised Machine Learning: Regression and Classification** — Stanford University / Coursera  
 - **Advanced Learning Algorithms** — Stanford University / Coursera  
 
