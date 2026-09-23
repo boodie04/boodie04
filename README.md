@@ -8,6 +8,12 @@
 
 📌 Goal: Research-based Master's (MSc) in Computer Science, with a direction in AI, Computer Vision, NLP, and Explainable AI (XAI)
 
+## 📄 CV
+
+[![CV](https://img.shields.io/badge/View%20My%20CV-PDF-red?style=for-the-badge\&logo=adobeacrobatreader\&logoColor=white)](https://github.com/boodie04/boodie04.github.io/blob/main/CV_Abdellatif_Salah_Eldin.pdf)
+
+[**View / Download my CV →**](https://github.com/boodie04/boodie04.github.io/blob/main/CV_Abdellatif_Salah_Eldin.pdf)
+
 ---
 
 I learn primarily by building. I regularly teach myself new technologies and areas beyond my formal coursework, turning what I learn into research, experiments, and working systems.
